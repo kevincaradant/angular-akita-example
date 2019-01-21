@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "./tslint-ng.json",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-console": [
+      true,
+      "info",
+      "time",
+      "timeEnd",
+      "trace",
+      "log"
+    ],
+    "no-empty-interface": false,
+    "no-use-before-declare": false,
+    "ban": [true, ["fit"], ["fdescribe"], ["xit"], ["xdescribe"]],
+    "banana-in-box": true,
+    "templates-no-negated-async": true,
+    "ordered-imports": [true],
+    "import-blacklist": [
+      true,
+      "lodash"
+    ]
+  }
+}

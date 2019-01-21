@@ -1,0 +1,53 @@
+@import 'node_modules/@angular/material/theming';
+@include mat-core();
+
+$primary: mat-palette($mat-deep-purple, 700);
+$accent: mat-palette($mat-amber, 500);
+
+// will generate .color-{colorName}-x1, .color-{colorName}-x2, etc (same for background and others)
+$color-declination: 10;
+
+// picked from http://www.cssauthor.com/wp-content/uploads/2015/01/Material-Color-Picker.jpg
+$red: #f54337;
+$pink: #ea1e63;
+$purple: #9c28b1;
+$deep-purple: #6937b7;
+$indigo: #3f51b5;
+$blue: #2295f4;
+$light-blue: #03a9f5;
+$cyan: #00bcd5;
+$teal: #00968a;
+$green: #4caf50;
+$light-green: #8cc34b;
+$lime: #cddc39;
+$yellow: #ffeb3c;
+$amber: #fec107;
+$orange: #ff9801;
+$deep-orange: #fe5522;
+$brown: #775545;
+$grey: #9d9e9f;
+$white: #ffffff;
+$black: #000000;
+
+$color-palette: (
+  'red': $red,
+  'pink': $pink,
+  'purple': $purple,
+  'deep-purple': $deep-purple,
+  'indigo': $indigo,
+  'blue': $blue,
+  'light-blue': $light-blue,
+  'cyan': $cyan,
+  'teal': $teal,
+  'green': $green,
+  'light-green': $light-green,
+  'lime': $lime,
+  'yellow': $yellow,
+  'amber': $amber,
+  'orange': $orange,
+  'deep-orange': $deep-orange,
+  'brown': $brown,
+  'grey': $grey,
+  'white': $white,
+  'black': $black,
+);

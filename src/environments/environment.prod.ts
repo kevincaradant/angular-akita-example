@@ -1,4 +1,8 @@
 export const environment = {
+  // HMR (Hot Module Replacement)
+  // Allow to refresh ts, css, html without reload the application
+  hmr: false,
+
   // angular can optimize some part of his code
   // (make more or less checks) according to an environment
   production: true,

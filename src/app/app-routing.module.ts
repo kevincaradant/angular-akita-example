@@ -22,7 +22,6 @@ const routes: Routes = [
     loadChildren: 'app/features/features.module#FeaturesModule',
   },
 ];
-
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {

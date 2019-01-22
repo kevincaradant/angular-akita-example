@@ -1,16 +1,11 @@
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
-
 export const environment = {
   // HMR (Hot Module Replacement)
   // Allow to refresh ts, css, html without reload the application
-  hmr: false,
+  hmr: true,
 
   // angular can optimize some part of his code
   // (make more or less checks) according to an environment
-  production: false,
+  production: true,
 
   // your backend URL
   // you can then use it for example in a service
@@ -26,9 +21,8 @@ export const environment = {
 
   // should you keep mocks when building the app
   // or hit the real API
-  mock: true,
+  mock: false,
 
-  // in ms
   // when using mocked data, you can use that
   // variable with `.delay` to simulate a network latency
   httpDelay: 500,
@@ -44,7 +38,7 @@ export const environment = {
   // to avoid a small latency when the user needs it, you
   // can preload them all and the browser will download
   // them when idle so they're instantly available when needed
-  preloadAllLazyLoadedModules: false,
+  preloadAllLazyLoadedModules: true,
 
   // wether to display debug informations or not
   // TIP : Use console.debug, console.warn and console.error

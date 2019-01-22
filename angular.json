@@ -27,6 +27,14 @@
             "scripts": []
           },
           "configurations": {
+            "hmr": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+                }
+              ]
+            },
             "production": {
               "optimization": true,
               "outputHashing": "all",
@@ -52,6 +60,10 @@
             "browserTarget": "angular-akita-example:build"
           },
           "configurations": {
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "angular-akita-example:build:hmr"
+            },
             "production": {
               "browserTarget": "angular-akita-example:build:production"
             }
